@@ -1,4 +1,5 @@
 ﻿using Microsoft.AspNet.Identity;
+using System.Collections.Generic;
 using System.Web.Http;
 
 namespace DataManager.Controllers
@@ -7,10 +8,10 @@ namespace DataManager.Controllers
     public class ValuesController : ApiController
     {
         // GET api/values
-        public IHttpActionResult Get()
+        public IEnumerable<string> Get()
         {
             string userId = RequestContext.Principal.Identity.GetUserId();
-            return Ok(new string[] { "value1", "value2", userId });
+            return new string[] { "value1", "value2", userId };
         }
 
         // GET api/values/5
