@@ -1,11 +1,19 @@
-﻿namespace RMWPFDesktopUI.ViewModels
+﻿using Caliburn.Micro;
+
+namespace RMWPFDesktopUI.ViewModels
 {
-    public class ShellViewModel
+    public class ShellViewModel : Conductor<object>
     {
-        private ICalculations _calculations;
-        public ShellViewModel(ICalculations calculations)
+        //private ICalculations _calculations;
+        //public ShellViewModel(ICalculations calculations)
+        //{
+        //    _calculations = calculations;
+        //}
+        private LoginViewModel _loginVM;
+        public ShellViewModel(LoginViewModel loginVM)
         {
-            _calculations = calculations;
+            _loginVM = loginVM;
+            ActivateItem(_loginVM);
         }
     }
 }
