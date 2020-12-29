@@ -23,7 +23,8 @@ namespace RMWPFDesktopUI
             _container.Instance(_container);
             _container
                 .Singleton<IWindowManager, WindowManager>()
-                .Singleton<IEventAggregator, EventAggregator>();
+                .Singleton<IEventAggregator, EventAggregator>()
+                .Singleton<IAPIHelper, APIHelper>();
 
             _container
                 .PerRequest<ICalculations, Calculations>();
