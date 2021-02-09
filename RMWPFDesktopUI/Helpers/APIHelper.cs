@@ -10,7 +10,7 @@ namespace RMWPFDesktopUI.Helpers
 {
     public class APIHelper : IAPIHelper
     {
-        private HttpClient apiClient { get; set; }
+        private HttpClient _apiClient { get; set; }
         public APIHelper()
         {
             InitializeClient();
@@ -18,10 +18,10 @@ namespace RMWPFDesktopUI.Helpers
         private void InitializeClient()
         {
             string api = ConfigurationManager.AppSettings["api"];
-            apiClient = new HttpClient();
-            apiClient.BaseAddress = new Uri(api);
-            apiClient.DefaultRequestHeaders.Accept.Clear();
-            apiClient.DefaultRequestHeaders.Accept.Add(new MediaTypeWithQualityHeaderValue("application/json"));
+            _apiClient = new HttpClient();
+            _apiClient.BaseAddress = new Uri(api);
+            _apiClient.DefaultRequestHeaders.Accept.Clear();
+            _apiClient.DefaultRequestHeaders.Accept.Add(new MediaTypeWithQualityHeaderValue("application/json"));
         }
 
         public async Task<AuthenticatedUser> Authenticate(string username, string password)
@@ -32,7 +32,7 @@ namespace RMWPFDesktopUI.Helpers
                 new KeyValuePair<string, string>("username", username),
                 new KeyValuePair<string, string>("password", password)
             });
-            using (HttpResponseMessage response = await apiClient.PostAsync("/Token", data))
+            using (HttpResponseMessage response = await _apiClient.PostAsync("/Token", data))
             {
                 if (response.IsSuccessStatusCode)
                 {
