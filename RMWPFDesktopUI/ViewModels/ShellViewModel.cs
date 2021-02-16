@@ -1,6 +1,6 @@
 ﻿using Caliburn.Micro;
 
-namespace RMWPFDesktopUI.ViewModels
+namespace WPFDesktopUI.ViewModels
 {
     public class ShellViewModel : Conductor<object>
     {

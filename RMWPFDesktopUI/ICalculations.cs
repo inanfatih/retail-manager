@@ -1,6 +1,6 @@
 ﻿using System.Collections.Generic;
 
-namespace RMWPFDesktopUI
+namespace WPFDesktopUI
 {
     public interface ICalculations
     {

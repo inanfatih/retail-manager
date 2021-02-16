@@ -2,7 +2,7 @@
 using System.Windows;
 using System.Windows.Controls;
 
-namespace RMWPFDesktopUI.Helpers
+namespace WPFDesktopUI.Helpers
 {
     public static class PasswordBoxHelper
     {

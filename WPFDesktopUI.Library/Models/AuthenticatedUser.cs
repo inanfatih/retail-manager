@@ -1,4 +1,4 @@
-﻿namespace RMWPFDesktopUI.Models
+﻿namespace WPFDesktopUI.Models
 {
     public class AuthenticatedUser
     {

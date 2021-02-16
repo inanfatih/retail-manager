@@ -1,13 +1,15 @@
 ﻿using Caliburn.Micro;
-using RMWPFDesktopUI.Helpers;
-using RMWPFDesktopUI.ViewModels;
 using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Windows;
 using System.Windows.Controls;
+using WPFDesktopUI.Helpers;
+using WPFDesktopUI.Library.Api;
+using WPFDesktopUI.Library.Models;
+using WPFDesktopUI.ViewModels;
 
-namespace RMWPFDesktopUI
+namespace WPFDesktopUI
 {
     public class Bootstrapper : BootstrapperBase
     {
@@ -24,6 +26,7 @@ namespace RMWPFDesktopUI
             _container
                 .Singleton<IWindowManager, WindowManager>()
                 .Singleton<IEventAggregator, EventAggregator>()
+                .Singleton<ILoggedInUserModel, LoggedInUserModel>()
                 .Singleton<IAPIHelper, APIHelper>();
 
             _container

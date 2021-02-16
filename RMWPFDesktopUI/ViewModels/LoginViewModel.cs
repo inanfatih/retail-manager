@@ -1,9 +1,9 @@
 ﻿using Caliburn.Micro;
-using RMWPFDesktopUI.Helpers;
 using System;
 using System.Threading.Tasks;
+using WPFDesktopUI.Library.Api;
 
-namespace RMWPFDesktopUI.ViewModels
+namespace WPFDesktopUI.ViewModels
 {
     public class LoginViewModel : Screen
     {
@@ -80,6 +80,9 @@ namespace RMWPFDesktopUI.ViewModels
             {
                 ErrorMessage = "";
                 var result = await _apiHelper.Authenticate(UserName, Password);
+
+                // Capture more information about the user
+                await _apiHelper.GetLoggedInUserInfo(result.Access_Token);
             }
             catch (Exception ex)
             {

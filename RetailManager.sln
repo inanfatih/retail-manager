@@ -7,9 +7,11 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DataManager", "DataManager\
 EndProject
 Project("{00D1A9C2-B5F0-4AF3-8072-F6C62B433612}") = "Data", "Data\Data.sqlproj", "{9327891B-83CD-407A-BF60-DA1440655575}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RMWPFDesktopUI", "RMWPFDesktopUI\RMWPFDesktopUI.csproj", "{9F1968A9-E80D-41D1-BA01-37FE6C18461C}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WPFDesktopUI", "RMWPFDesktopUI\WPFDesktopUI.csproj", "{9F1968A9-E80D-41D1-BA01-37FE6C18461C}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DataManager.Library", "DataManager.Library\DataManager.Library.csproj", "{CBE26981-05BE-416B-A2FD-9BEBFF9C6AA0}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WPFDesktopUI.Library", "WPFDesktopUI.Library\WPFDesktopUI.Library.csproj", "{DF6670EA-3916-48B3-8639-913C8840FBF2}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -35,6 +37,10 @@ Global
 		{CBE26981-05BE-416B-A2FD-9BEBFF9C6AA0}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{CBE26981-05BE-416B-A2FD-9BEBFF9C6AA0}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{CBE26981-05BE-416B-A2FD-9BEBFF9C6AA0}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DF6670EA-3916-48B3-8639-913C8840FBF2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DF6670EA-3916-48B3-8639-913C8840FBF2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DF6670EA-3916-48B3-8639-913C8840FBF2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DF6670EA-3916-48B3-8639-913C8840FBF2}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
