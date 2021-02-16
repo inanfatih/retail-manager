@@ -9,6 +9,8 @@ Project("{00D1A9C2-B5F0-4AF3-8072-F6C62B433612}") = "Data", "Data\Data.sqlproj",
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RMWPFDesktopUI", "RMWPFDesktopUI\RMWPFDesktopUI.csproj", "{9F1968A9-E80D-41D1-BA01-37FE6C18461C}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DataManager.Library", "DataManager.Library\DataManager.Library.csproj", "{CBE26981-05BE-416B-A2FD-9BEBFF9C6AA0}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -29,6 +31,10 @@ Global
 		{9F1968A9-E80D-41D1-BA01-37FE6C18461C}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{9F1968A9-E80D-41D1-BA01-37FE6C18461C}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{9F1968A9-E80D-41D1-BA01-37FE6C18461C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CBE26981-05BE-416B-A2FD-9BEBFF9C6AA0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CBE26981-05BE-416B-A2FD-9BEBFF9C6AA0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CBE26981-05BE-416B-A2FD-9BEBFF9C6AA0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CBE26981-05BE-416B-A2FD-9BEBFF9C6AA0}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
