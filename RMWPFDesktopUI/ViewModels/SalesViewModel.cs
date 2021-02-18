@@ -1,7 +1,7 @@
 ﻿using Caliburn.Micro;
 using System.ComponentModel;
 
-namespace RMWPFDesktopUI.ViewModels
+namespace WPFDesktopUI.ViewModels
 {
     public class SalesViewModel : Screen
     {
@@ -27,9 +27,9 @@ namespace RMWPFDesktopUI.ViewModels
             }
         }
 
-        private string _itemQuantity;
+        private int _itemQuantity;
 
-        public string ItemQuantity
+        public int ItemQuantity
         {
             get { return _itemQuantity; }
             set
