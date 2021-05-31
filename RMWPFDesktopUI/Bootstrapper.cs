@@ -6,6 +6,7 @@ using System.Windows;
 using System.Windows.Controls;
 using WPFDesktopUI.Helpers;
 using WPFDesktopUI.Library.Api;
+using WPFDesktopUI.Library.Helpers;
 using WPFDesktopUI.Library.Models;
 using WPFDesktopUI.ViewModels;
 
@@ -29,6 +30,7 @@ namespace WPFDesktopUI
                 .Singleton<IWindowManager, WindowManager>()
                 .Singleton<IEventAggregator, EventAggregator>()
                 .Singleton<ILoggedInUserModel, LoggedInUserModel>()
+                .Singleton<IConfigHelper, ConfigHelper>()
                 .Singleton<IAPIHelper, APIHelper>();
 
             _container
